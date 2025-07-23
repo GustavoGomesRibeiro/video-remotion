@@ -8,6 +8,8 @@ import {
 import { motion } from "framer-motion";
 import BoxPerguntas from "./BoxPerguntas";
 import BoxOpcoes from "./BoxOpcoes";
+import { settings } from "../assets/config/setting";
+
 export const QuestionFrame = ({ question, options, background }) => {
   const frame = useCurrentFrame();
   const yPosition = interpolate(frame, [0, 30], [100, 0], {
@@ -48,7 +50,7 @@ export const QuestionFrame = ({ question, options, background }) => {
             opacity,
           }}
         >
-          Conhecimentos Gerais
+          {settings.titulo}
         </motion.div>
 
         <div

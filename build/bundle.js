@@ -37804,7 +37804,7 @@ const QuestionFrame = ({ question, options, background }) => {
                 transform: `translateY(${yPosition}px)`,
                 opacity
               },
-              children: "Quiz Conhecimentos Gerais"
+              children: "Conhecimentos Gerais"
             }
           ),
           /* @__PURE__ */ (0,jsx_runtime.jsxs)(
@@ -37899,7 +37899,7 @@ const AnswerFrame = ({
                 textShadow: "rgb(0, 0, 0) 10px 10px 0px",
                 textAlign: "center"
               },
-              children: "Quiz Conhecimentos Gerais"
+              children: "Conhecimentos Gerais"
             }
           ),
           /* @__PURE__ */ (0,jsx_runtime.jsx)(components_BoxPerguntas, { hasAnimation: true, children: question }),
@@ -37939,104 +37939,82 @@ const settings = {
 
 const questions = [
   {
-    question: "Qual \xE9 o livro sagrado do Cristianismo?",
-    options: ["A) B\xEDblia", "B) Alcor\xE3o", "C) Tor\xE1"],
-    correctAnswer: "A) B\xEDblia",
-    background: "assets/yellowSpiral.jpg",
-    questionAudio: "assets/question/01.mp3",
-    timerAudio: "assets/clock.mp3",
-    answerAudio: "assets/acerto.mp3",
-    correctAudio: "assets/answer/01.mp3"
+    question: "Qual foi o primeiro milagre de Jesus Cristo?",
+    options: [
+      "A) Caminhar sobre as \xE1guas",
+      "B) Transformar \xE1gua em vinho",
+      "C) Curar um cego"
+    ],
+    correctAnswer: "B) Transformar \xE1gua em vinho",
+    questionAudio: "/question/01.mp3",
+    correctAudio: "/answer/01.mp3"
   },
   {
-    question: "Quem recebeu os Dez Mandamentos segundo a B\xEDblia?",
-    options: ["A) Abra\xE3o", "B) Mois\xE9s", "C) No\xE9"],
-    correctAnswer: "B) Mois\xE9s",
-    background: "assets/yellowSpiral.jpg",
-    questionAudio: "assets/question/02.mp3",
-    timerAudio: "assets/clock.mp3",
-    answerAudio: "assets/acerto.mp3",
-    correctAudio: "assets/answer/02.mp3"
+    question: "Qual \xE9 o nome do \xFAltimo livro da B\xEDblia?",
+    options: ["A) Apocalipse", "B) G\xEAnesis", "C) Salmos"],
+    correctAnswer: "A) Apocalipse",
+    questionAudio: "/question/02.mp3",
+    correctAudio: "/answer/02.mp3"
   },
   {
-    question: "Qual religi\xE3o tem Maom\xE9 como seu profeta?",
-    options: ["A) Juda\xEDsmo", "B) Cristianismo", "C) Islamismo"],
-    correctAnswer: "C) Islamismo",
-    background: "assets/yellowSpiral.jpg",
-    questionAudio: "assets/question/03.mp3",
-    timerAudio: "assets/clock.mp3",
-    answerAudio: "assets/acerto.mp3",
-    correctAudio: "assets/answer/03.mp3"
+    question: "Quem construiu a arca para sobreviver ao dil\xFAvio?",
+    options: ["A) Mois\xE9s", "B) No\xE9", "C) Abra\xE3o"],
+    correctAnswer: "B) No\xE9",
+    questionAudio: "/question/03.mp3",
+    correctAudio: "/answer/03.mp3"
   },
   {
-    question: "Qual \xE9 a cidade sagrada do Islamismo?",
-    options: ["A) Jerusal\xE9m", "B) Meca", "C) Roma"],
-    correctAnswer: "B) Meca",
-    background: "assets/yellowSpiral.jpg",
-    questionAudio: "assets/question/04.mp3",
-    timerAudio: "assets/clock.mp3",
-    answerAudio: "assets/acerto.mp3",
-    correctAudio: "assets/answer/04.mp3"
+    question: "Qual religi\xE3o segue os ensinamentos do Alcor\xE3o?",
+    options: ["A) Cristianismo", "B) Islamismo", "C) Hindu\xEDsmo"],
+    correctAnswer: "B) Islamismo",
+    questionAudio: "/question/04.mp3",
+    correctAudio: "/answer/04.mp3"
   },
   {
-    question: "Qual destas figuras \xE9 conhecida como o fundador do Budismo?",
-    options: ["A) Conf\xFAcio", "B) Buda", "C) Shiva"],
-    correctAnswer: "B) Buda",
-    background: "assets/yellowSpiral.jpg",
-    questionAudio: "assets/question/05.mp3",
-    timerAudio: "assets/clock.mp3",
-    answerAudio: "assets/acerto.mp3",
-    correctAudio: "assets/answer/05.mp3"
+    question: "Quem foi lan\xE7ado na cova dos le\xF5es, mas sobreviveu?",
+    options: ["A) Daniel", "B) Jonas", "C) Jos\xE9"],
+    correctAnswer: "A) Daniel",
+    questionAudio: "/question/05.mp3",
+    correctAudio: "/answer/05.mp3"
   },
   {
-    question: "O que significa 'Tor\xE1' no Juda\xEDsmo?",
-    options: ["A) Lei", "B) Profecia", "C) Ora\xE7\xE3o"],
-    correctAnswer: "A) Lei",
-    background: "assets/yellowSpiral.jpg",
-    questionAudio: "assets/question/06.mp3",
-    timerAudio: "assets/clock.mp3",
-    answerAudio: "assets/acerto.mp3",
-    correctAudio: "assets/answer/06.mp3"
+    question: "Qual religi\xE3o acredita na Trindade (Pai, Filho e Esp\xEDrito Santo)?",
+    options: ["A) Cristianismo", "B) Budismo", "C) Juda\xEDsmo"],
+    correctAnswer: "A) Cristianismo",
+    questionAudio: "/question/06.mp3",
+    correctAudio: "/answer/06.mp3"
   },
   {
-    question: "Qual religi\xE3o acredita na reencarna\xE7\xE3o e no karma?",
-    options: ["A) Hindu\xEDsmo", "B) Cristianismo", "C) Islamismo"],
-    correctAnswer: "A) Hindu\xEDsmo",
-    background: "assets/yellowSpiral.jpg",
-    questionAudio: "assets/question/07.mp3",
-    timerAudio: "assets/clock.mp3",
-    answerAudio: "assets/acerto.mp3",
-    correctAudio: "assets/answer/07.mp3"
+    question: "Quantos disc\xEDpulos Jesus tinha?",
+    options: ["A) 7", "B) 12", "C) 40"],
+    correctAnswer: "B) 12",
+    questionAudio: "/question/07.mp3",
+    correctAudio: "/answer/07.mp3"
   },
   {
-    question: "Qual ap\xF3stolo negou Jesus tr\xEAs vezes?",
-    options: ["A) Pedro", "B) Jo\xE3o", "C) Paulo"],
-    correctAnswer: "A) Pedro",
-    background: "assets/yellowSpiral.jpg",
-    questionAudio: "assets/question/08.mp3",
-    timerAudio: "assets/clock.mp3",
-    answerAudio: "assets/acerto.mp3",
-    correctAudio: "assets/answer/08.mp3"
+    question: "Qual o significado da P\xE1scoa para os crist\xE3os?",
+    options: [
+      "A) O nascimento de Jesus",
+      "B) A ressurrei\xE7\xE3o de Jesus",
+      "C) A cria\xE7\xE3o do mundo"
+    ],
+    correctAnswer: "B) A ressurrei\xE7\xE3o de Jesus",
+    questionAudio: "/question/08.mp3",
+    correctAudio: "/answer/08.mp3"
   },
   {
-    question: "Qual \xE9 o nome do primeiro livro da B\xEDblia?",
-    options: ["A) \xCAxodo", "B) G\xEAnesis", "C) Lev\xEDtico"],
-    correctAnswer: "B) G\xEAnesis",
-    background: "assets/yellowSpiral.jpg",
-    questionAudio: "assets/question/09.mp3",
-    timerAudio: "assets/clock.mp3",
-    answerAudio: "assets/acerto.mp3",
-    correctAudio: "assets/answer/09.mp3"
+    question: "Quem foi engolido por um grande peixe segundo a B\xEDblia?",
+    options: ["A) Mois\xE9s", "B) Elias", "C) Jonas"],
+    correctAnswer: "C) Jonas",
+    questionAudio: "/question/09.mp3",
+    correctAudio: "/answer/09.mp3"
   },
   {
-    question: "Quem \xE9 considerado o pai do povo judeu?",
-    options: ["A) Mois\xE9s", "B) Davi", "C) Abra\xE3o"],
-    correctAnswer: "C) Abra\xE3o",
-    background: "assets/yellowSpiral.jpg",
-    questionAudio: "assets/question/10.mp3",
-    timerAudio: "assets/clock.mp3",
-    answerAudio: "assets/acerto.mp3",
-    correctAudio: "assets/answer/10.mp3"
+    question: "Onde nasceu Jesus Cristo?",
+    options: ["A) Nazar\xE9", "B) Jerusal\xE9m", "C) Bel\xE9m"],
+    correctAnswer: "C) Bel\xE9m",
+    questionAudio: "/question/10.mp3",
+    correctAudio: "/answer/10.mp3"
   }
 ];
 /* harmony default export */ const json = (questions);
@@ -38069,7 +38047,7 @@ const QuizVideo = () => {
               background: settings.background
             }
           ),
-          /* @__PURE__ */ (0,jsx_runtime.jsx)(cjs.Audio, { src: (0,cjs.staticFile)(settings.questionAudio) }),
+          /* @__PURE__ */ (0,jsx_runtime.jsx)(cjs.Audio, { src: (0,cjs.staticFile)(question.questionAudio) }),
           /* @__PURE__ */ (0,jsx_runtime.jsx)(cjs.Audio, { src: (0,cjs.staticFile)(settings.timerAudio) })
         ]
       }
@@ -38090,7 +38068,7 @@ const QuizVideo = () => {
             }
           ),
           /* @__PURE__ */ (0,jsx_runtime.jsx)(cjs.Audio, { src: (0,cjs.staticFile)(settings.answerAudio) }),
-          /* @__PURE__ */ (0,jsx_runtime.jsx)(cjs.Audio, { src: (0,cjs.staticFile)(settings.correctAudio) })
+          /* @__PURE__ */ (0,jsx_runtime.jsx)(cjs.Audio, { src: (0,cjs.staticFile)(question.correctAudio) })
         ]
       }
     )
