@@ -33,6 +33,7 @@
     "lint": "eslint src && tsc",
     "gerarVideoFinal": "npx remotion render QuizVideo out/quiz_final.mp4",
     "gerarArquivos": "npx ts-node scripts/generate-quiz.ts",
-    "gerarVideosSeparados": "npx remotion render QuizParte1 out/quiz_parte1.mp4 && npx remotion render QuizParte2 out/quiz_parte2.mp4"
+    "gerarVideosSeparados": "npx remotion render QuizParte1 out/quiz_parte1.mp4 && npx remotion render QuizParte2 out/quiz_parte2.mp4",
+    "gerarVideo": "npm run gerarArquivos && npm run gerarVideosSeparados"
   }
 }

@@ -8,6 +8,7 @@ import {
 } from "remotion";
 import BoxPerguntas from "./BoxPerguntas";
 import BoxOpcoes from "./BoxOpcoes";
+import { settings } from "../assets/config/setting";
 
 export const AnswerFrame = ({
   question,
@@ -48,7 +49,7 @@ export const AnswerFrame = ({
             textAlign: "center",
           }}
         >
-          Conhecimentos Gerais
+          {settings.titulo}
         </div>
 
         <BoxPerguntas hasAnimation>{question}</BoxPerguntas>

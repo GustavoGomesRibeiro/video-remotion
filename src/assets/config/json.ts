@@ -1,111 +1,111 @@
 const questions = [
   {
-    "question": "Qual país foi o primeiro a autorizar o uso emergencial da vacina contra a COVID-19?",
+    "question": "Qual é o esporte mais praticado no mundo?",
     "options": [
-      "A) Estados Unidos",
-      "B) Reino Unido",
-      "C) Canadá"
+      "A) Futebol",
+      "B) Vôlei",
+      "C) Basquete"
     ],
-    "correctAnswer": "B) Reino Unido",
+    "correctAnswer": "A) Futebol",
     "questionAudio": "/public/question/01.mp3",
     "correctAudio": "/public/answer/01.mp3"
   },
   {
-    "question": "Qual evento esportivo foi adiado para 2021 devido à pandemia de coronavírus?",
+    "question": "Qual é a modalidade mais popular do boxe?",
     "options": [
-      "A) Copa América",
-      "B) Jogos Olímpicos de Tóquio",
-      "C) UEFA Euro"
+      "A) Peso-pesado",
+      "B) Peso-médio",
+      "C) Peso-leve"
     ],
-    "correctAnswer": "B) Jogos Olímpicos de Tóquio",
+    "correctAnswer": "A) Peso-pesado",
     "questionAudio": "/public/question/02.mp3",
     "correctAudio": "/public/answer/02.mp3"
   },
   {
-    "question": "Em que país foi descoberto o maior número de casos de Ebola em 2020?",
+    "question": "Quem é considerado o maior jogador de basquete de todos os tempos?",
     "options": [
-      "A) República Democrática do Congo",
-      "B) Guiné",
-      "C) Nigéria"
+      "A) Kobe Bryant",
+      "B) LeBron James",
+      "C) Michael Jordan"
     ],
-    "correctAnswer": "A) República Democrática do Congo",
+    "correctAnswer": "C) Michael Jordan",
     "questionAudio": "/public/question/03.mp3",
     "correctAudio": "/public/answer/03.mp3"
   },
   {
-    "question": "Qual país realizou um referendo em 2020 para permitir a legalização do aborto?",
+    "question": "Quantos jogadores compõem uma equipe de vôlei em quadra?",
     "options": [
-      "A) Argentina",
-      "B) Polônia",
-      "C) Irlanda"
+      "A) 4",
+      "B) 6",
+      "C) 5"
     ],
-    "correctAnswer": "A) Argentina",
+    "correctAnswer": "B) 6",
     "questionAudio": "/public/question/04.mp3",
     "correctAudio": "/public/answer/04.mp3"
   },
   {
-    "question": "Quem foi eleito o novo presidente dos Estados Unidos em 2020?",
+    "question": "Qual é a pontuação máxima em uma partida de tênis?",
     "options": [
-      "A) Joe Biden",
-      "B) Donald Trump",
-      "C) Bernie Sanders"
+      "A) 50 pontos",
+      "B) 100 pontos",
+      "C) 60 pontos"
     ],
-    "correctAnswer": "A) Joe Biden",
+    "correctAnswer": "C) 60 pontos",
     "questionAudio": "/public/question/05.mp3",
     "correctAudio": "/public/answer/05.mp3"
   },
   {
-    "question": "Quais foram os países que assinaram um acordo de paz mediado pelos Estados Unidos em 2020?",
+    "question": "Qual destes jogadores é conhecido como 'The Flash'?",
     "options": [
-      "A) Israel e Palestina",
-      "B) Coreia do Norte e Coreia do Sul",
-      "C) Iêmen e Arábia Saudita"
+      "A) Cristiano Ronaldo",
+      "B) Usain Bolt",
+      "C) Lionel Messi"
     ],
-    "correctAnswer": "A) Israel e Palestina",
+    "correctAnswer": "B) Usain Bolt",
     "questionAudio": "/public/question/06.mp3",
     "correctAudio": "/public/answer/06.mp3"
   },
   {
-    "question": "Qual país sofreu um grande terremoto em 2020, causando danos severos na capital Beirute?",
+    "question": "Em que ano o Brasil sediou a Copa do Mundo de futebol pela primeira vez?",
     "options": [
-      "A) Grécia",
-      "B) Turquia",
-      "C) Líbano"
+      "A) 1950",
+      "B) 1962",
+      "C) 2014"
     ],
-    "correctAnswer": "C) Líbano",
+    "correctAnswer": "A) 1950",
     "questionAudio": "/public/question/07.mp3",
     "correctAudio": "/public/answer/07.mp3"
   },
   {
-    "question": "Quem foi o vencedor do prêmio Nobel da Paz em 2020?",
+    "question": "Qual é o esporte mais antigo do mundo?",
     "options": [
-      "A) Greta Thunberg",
-      "B) Organização das Nações Unidas",
-      "C) Programa Mundial de Alimentos"
+      "A) Corrida",
+      "B) Natação",
+      "C) Luta"
     ],
-    "correctAnswer": "C) Programa Mundial de Alimentos",
+    "correctAnswer": "C) Luta",
     "questionAudio": "/public/question/08.mp3",
     "correctAudio": "/public/answer/08.mp3"
   },
   {
-    "question": "Qual país europeu foi atingido por fortes inundações em 2020, deixando dezenas de vítimas?",
+    "question": "Qual destes esportes pertence aos Jogos Olímpicos de Inverno?",
     "options": [
-      "A) Alemanha",
-      "B) França",
-      "C) Itália"
+      "A) Surf",
+      "B) Snowboard",
+      "C) Taekwondo"
     ],
-    "correctAnswer": "A) Alemanha",
+    "correctAnswer": "B) Snowboard",
     "questionAudio": "/public/question/09.mp3",
     "correctAudio": "/public/answer/09.mp3"
   },
   {
-    "question": "Em que país ocorreu um intenso incêndio florestal em 2020, destruindo grande parte da vida selvagem?",
+    "question": "Qual é a nacionalidade do piloto de Fórmula 1 Lewis Hamilton?",
     "options": [
-      "A) Austrália",
-      "B) Brasil",
-      "C) Indonésia"
+      "A) Britânica",
+      "B) Alemã",
+      "C) Brasileira"
     ],
-    "correctAnswer": "A) Austrália",
+    "correctAnswer": "A) Britânica",
     "questionAudio": "/public/question/10.mp3",
     "correctAudio": "/public/answer/10.mp3"
   }

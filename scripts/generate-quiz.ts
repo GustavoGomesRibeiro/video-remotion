@@ -87,7 +87,8 @@ const gerarLegendaTikTok = (tema: string, dificuldade: string): string => {
   const temaHashtag = tema
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
-    .replace(/\s/g, "");
+    .replace(/\s/g, "")
+    .toLowerCase();
   return `
 🧠 Você manda bem em ${tema}?
 Desafie seu cérebro com esse quiz de nível ${dificuldade}!
