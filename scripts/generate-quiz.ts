@@ -31,7 +31,7 @@ const extractJsonArray = (content: string): any[] => {
 
 const generateQuestions = async (tema: string, dificuldade: string) => {
   const prompt = `
-Gere 10 perguntas no estilo quiz (múltipla escolha), com tema "${tema}" e dificuldade "${dificuldade}", evite repetições de perguntas ao máximo. 
+Gere 10 perguntas no estilo quiz (múltipla escolha), com tema "${tema}" e dificuldade "${dificuldade}", evite repetições de perguntas ao máximo e sempre buscar as informações corretas. 
 Formato JSON, sem nenhum texto fora do array, nem explicações, comentários ou marcação. Apenas o array:
 [
   {
@@ -83,10 +83,57 @@ const generateAudio = async (text: string, outputPath: string) => {
   });
 };
 
+const gerarLegendaTikTok = (tema: string, dificuldade: string): string => {
+  const temaHashtag = tema
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\s/g, "");
+  return `
+🧠 Você manda bem em ${tema}?
+Desafie seu cérebro com esse quiz de nível ${dificuldade}!
+Comente quantas você acertou 👇
+
+#quiz #conhecimentosgerais #quiztime #curiosidades #${temaHashtag} #quiz${temaHashtag}
+`.trim();
+};
+
 const run = async () => {
-  const tema = "Religião";
-  const dificuldade = "difícil";
+  const temas = [
+    "Religião",
+    "Ciência",
+    "Geografia",
+    "História",
+    "Esportes",
+    "Artes",
+    "Entretenimento",
+    "Tecnologia",
+    "Música",
+    "Série",
+    "Filmes",
+    "Cinema",
+    "Atualidades",
+    "Cultura Geral",
+    "Matemática",
+    "Filosofia",
+    "Saúde",
+    "Idiomas",
+    "Jogos",
+  ];
+  const dificuldades = ["fácil", "médio", "difícil"];
+
+  const tema = temas[Math.floor(Math.random() * temas.length)];
+  const dificuldade =
+    dificuldades[Math.floor(Math.random() * dificuldades.length)];
+
   const questions = await generateQuestions(tema, dificuldade);
+
+  const backgroundsDir = path.resolve("public/backgrounds");
+  const backgroundFiles = fs
+    .readdirSync(backgroundsDir)
+    .filter((f) => f.endsWith(".mp4"));
+  const randomBackground =
+    backgroundFiles[Math.floor(Math.random() * backgroundFiles.length)];
+  const backgroundPath = `/backgrounds/${randomBackground}`;
 
   const processed = [];
 
@@ -94,8 +141,8 @@ const run = async () => {
     const q = questions[i];
     const id = String(i + 1).padStart(2, "0");
 
-    const questionAudioPath = `question/${id}.mp3`;
-    const correctAudioPath = `answer/${id}.mp3`;
+    const questionAudioPath = `public/question/${id}.mp3`;
+    const correctAudioPath = `public/answer/${id}.mp3`;
 
     await generateAudio(q.question, path.resolve(`${questionAudioPath}`));
     await generateAudio(
@@ -117,6 +164,26 @@ const run = async () => {
 
   fs.writeFileSync(outputPath, outputData);
   console.log(`✅ Arquivo salvo em ${outputPath}`);
+
+  // ⚙️ Atualiza src/assets.ts com o background sorteado
+  const settingsPath = path.resolve("src/assets/config/setting.ts");
+  const newSettings = `
+export const settings = {
+  titulo: "Quiz ${tema}",
+  background: "${backgroundPath}",
+  timerAudio: "/clock.mp3",
+  answerAudio: "/acerto.mp3",
+  correctAudio: "/respostaCorreta.mp3",
+};
+  `.trimStart();
+
+  fs.writeFileSync(settingsPath, newSettings);
+  console.log(`✅ settings.ts atualizado com background: ${backgroundPath}`);
+
+  const legenda = gerarLegendaTikTok(tema, dificuldade);
+  const legendaPath = path.resolve("src/assets/config/legend.ts");
+  fs.writeFileSync(legendaPath, `export const legenda = \`${legenda}\`;\n`);
+  console.log(`✅ Legenda gerada em ${legendaPath}`);
 };
 
 run().catch((err) => {
