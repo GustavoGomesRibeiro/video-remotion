@@ -171,6 +171,7 @@ const run = async () => {
   const newSettings = `
 export const settings = {
   titulo: "Quiz ${tema}",
+  dificuldade: "${dificuldade}",
   background: "${backgroundPath}",
   timerAudio: "/clock.mp3",
   answerAudio: "/acerto.mp3",
@@ -185,6 +186,11 @@ export const settings = {
   const legendaPath = path.resolve("src/assets/config/legend.ts");
   fs.writeFileSync(legendaPath, `export const legenda = \`${legenda}\`;\n`);
   console.log(`✅ Legenda gerada em ${legendaPath}`);
+
+  const introText = `Quiz de ${tema}, Consegue acertar 5 de 5 perguntas na dificuldade ${dificuldade}? Vamos lá!`;
+  const introAudioPath = path.resolve("public/audio-intro.mp3");
+  await generateAudio(introText, introAudioPath);
+  console.log("✅ Áudio da introdução criado.");
 };
 
 run().catch((err) => {

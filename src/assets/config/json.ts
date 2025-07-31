@@ -1,111 +1,111 @@
 const questions = [
   {
-    "question": "Qual é o esporte mais praticado no mundo?",
+    "question": "Qual foi o resultado da eleição presidencial dos Estados Unidos em 2020?",
     "options": [
-      "A) Futebol",
-      "B) Vôlei",
-      "C) Basquete"
+      "A) Joe Biden foi reeleito",
+      "B) Donald Trump foi reeleito",
+      "C) Joe Biden foi eleito"
     ],
-    "correctAnswer": "A) Futebol",
+    "correctAnswer": "C) Joe Biden foi eleito",
     "questionAudio": "/public/question/01.mp3",
     "correctAudio": "/public/answer/01.mp3"
   },
   {
-    "question": "Qual é a modalidade mais popular do boxe?",
+    "question": "Em que país ocorreu o boom do Bitcoin em 2021?",
     "options": [
-      "A) Peso-pesado",
-      "B) Peso-médio",
-      "C) Peso-leve"
+      "A) China",
+      "B) Estados Unidos",
+      "C) El Salvador"
     ],
-    "correctAnswer": "A) Peso-pesado",
+    "correctAnswer": "C) El Salvador",
     "questionAudio": "/public/question/02.mp3",
     "correctAudio": "/public/answer/02.mp3"
   },
   {
-    "question": "Quem é considerado o maior jogador de basquete de todos os tempos?",
+    "question": "Qual a capital da Etiópia?",
     "options": [
-      "A) Kobe Bryant",
-      "B) LeBron James",
-      "C) Michael Jordan"
+      "A) Dar es Salaam",
+      "B) Addis Abeba",
+      "C) Djibuti"
     ],
-    "correctAnswer": "C) Michael Jordan",
+    "correctAnswer": "B) Addis Abeba",
     "questionAudio": "/public/question/03.mp3",
     "correctAudio": "/public/answer/03.mp3"
   },
   {
-    "question": "Quantos jogadores compõem uma equipe de vôlei em quadra?",
+    "question": "Quem é o atual presidente da Rússia?",
     "options": [
-      "A) 4",
-      "B) 6",
-      "C) 5"
+      "A) Vladimir Putin",
+      "B) Dmitry Medvedev",
+      "C) Boris Yeltsin"
     ],
-    "correctAnswer": "B) 6",
+    "correctAnswer": "A) Vladimir Putin",
     "questionAudio": "/public/question/04.mp3",
     "correctAudio": "/public/answer/04.mp3"
   },
   {
-    "question": "Qual é a pontuação máxima em uma partida de tênis?",
+    "question": "Qual é a capital da Austrália?",
     "options": [
-      "A) 50 pontos",
-      "B) 100 pontos",
-      "C) 60 pontos"
+      "A) Sydney",
+      "B) Melbourne",
+      "C) Camberra"
     ],
-    "correctAnswer": "C) 60 pontos",
+    "correctAnswer": "C) Camberra",
     "questionAudio": "/public/question/05.mp3",
     "correctAudio": "/public/answer/05.mp3"
   },
   {
-    "question": "Qual destes jogadores é conhecido como 'The Flash'?",
+    "question": "Qual o nome da líder de Myanmar que foi deposta em um golpe de estado em 2021?",
     "options": [
-      "A) Cristiano Ronaldo",
-      "B) Usain Bolt",
-      "C) Lionel Messi"
+      "A) Aung San Suu Kyi",
+      "B) Yingluck Shinawatra",
+      "C) Sheikh Hasina"
     ],
-    "correctAnswer": "B) Usain Bolt",
+    "correctAnswer": "A) Aung San Suu Kyi",
     "questionAudio": "/public/question/06.mp3",
     "correctAudio": "/public/answer/06.mp3"
   },
   {
-    "question": "Em que ano o Brasil sediou a Copa do Mundo de futebol pela primeira vez?",
+    "question": "Onde ocorreu a conferência sobre mudanças climáticas COP26 em 2021?",
     "options": [
-      "A) 1950",
-      "B) 1962",
-      "C) 2014"
+      "A) Nova York",
+      "B) Glasgow",
+      "C) Paris"
     ],
-    "correctAnswer": "A) 1950",
+    "correctAnswer": "B) Glasgow",
     "questionAudio": "/public/question/07.mp3",
     "correctAudio": "/public/answer/07.mp3"
   },
   {
-    "question": "Qual é o esporte mais antigo do mundo?",
+    "question": "Quem é o atual primeiro-ministro do Reino Unido?",
     "options": [
-      "A) Corrida",
-      "B) Natação",
-      "C) Luta"
+      "A) Boris Johnson",
+      "B) David Cameron",
+      "C) Theresa May"
     ],
-    "correctAnswer": "C) Luta",
+    "correctAnswer": "A) Boris Johnson",
     "questionAudio": "/public/question/08.mp3",
     "correctAudio": "/public/answer/08.mp3"
   },
   {
-    "question": "Qual destes esportes pertence aos Jogos Olímpicos de Inverno?",
+    "question": "Qual país inaugurou a Ponte Hong Kong-Zhuhai-Macau, a maior ponte marítima do mundo?",
     "options": [
-      "A) Surf",
-      "B) Snowboard",
-      "C) Taekwondo"
+      "A) China",
+      "B) Japão",
+      "C) Coreia do Sul"
     ],
-    "correctAnswer": "B) Snowboard",
+    "correctAnswer": "A) China",
     "questionAudio": "/public/question/09.mp3",
     "correctAudio": "/public/answer/09.mp3"
   },
   {
-    "question": "Qual é a nacionalidade do piloto de Fórmula 1 Lewis Hamilton?",
+    "question": "Qual a principal causa dos protestos que ocorreram em Cuba em 2021?",
     "options": [
-      "A) Britânica",
-      "B) Alemã",
-      "C) Brasileira"
+      "A) Crise econômica",
+      "B) Epidemia de zika",
+      "C) Corrupção policial"
     ],
-    "correctAnswer": "A) Britânica",
+    "correctAnswer": "A) Crise econômica",
     "questionAudio": "/public/question/10.mp3",
     "correctAudio": "/public/answer/10.mp3"
   }

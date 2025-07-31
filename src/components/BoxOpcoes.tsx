@@ -1,10 +1,10 @@
-import { interpolate, useCurrentFrame } from "remotion";
-
+import { Img, interpolate, staticFile, useCurrentFrame } from "remotion";
 type BoxOpcoesProps = {
   children: React.ReactNode;
   isCorrect?: boolean;
   hasAnimation?: boolean;
   scale?: any;
+  showIcon?: boolean;
 };
 
 const BoxOpcoes = ({
@@ -12,6 +12,7 @@ const BoxOpcoes = ({
   isCorrect,
   hasAnimation,
   scale,
+  showIcon,
 }: BoxOpcoesProps) => {
   const frame = useCurrentFrame();
 
@@ -29,7 +30,7 @@ const BoxOpcoes = ({
         border: "2px solid #000",
         fontFamily: "Lilita One",
         backgroundColor: isCorrect ? "#7ED957" : "#F7F2E5",
-        padding: "20px",
+        padding: "20px 20px 20px 100px",
         margin: "40px 0px",
         borderRadius: "20px",
         boxShadow: "25px 35px 10px rgba(0, 0, 0, 1)",
@@ -39,6 +40,7 @@ const BoxOpcoes = ({
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center",
+        position: "relative",
         transform: hasAnimation
           ? `scale(${scale})`
           : `translateY(${yPosition}px)`,
@@ -46,6 +48,19 @@ const BoxOpcoes = ({
         opacity,
       }}
     >
+      {showIcon !== false && (
+        <Img
+          src={staticFile("/question-mark.png")}
+          style={{
+            position: "absolute",
+            left: 30,
+            top: "50%",
+            transform: "translateY(-50%)",
+            width: 80,
+            height: 80,
+          }}
+        />
+      )}
       {children}
     </div>
   );

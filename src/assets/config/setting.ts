@@ -1,8 +1,8 @@
 export const settings = {
-  titulo: "Quiz Esportes",
-  background: "/backgrounds/spiral-background-orange.mp4",
+  titulo: "Quiz Atualidades",
+  dificuldade: "Médio",
+  background: "/backgrounds/spiral-background-purple.mp4",
   timerAudio: "/clock.mp3",
   answerAudio: "/acerto.mp3",
   correctAudio: "/respostaCorreta.mp3",
 };
-  

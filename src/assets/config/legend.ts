@@ -1,5 +1,5 @@
-export const legenda = `🧠 Você manda bem em Esportes?
-Desafie seu cérebro com esse quiz de nível médio!
+export const legenda = `🧠 Você manda bem em Atualidades?
+Desafie seu cérebro com esse quiz de nível difícil!
 Comente quantas você acertou 👇
 
-#quiz #conhecimentosgerais #quiztime #curiosidades #esportes #quizesportes`;
+#quiz #conhecimentosgerais #quiztime #curiosidades #atualidades #quizatualidades`;
