@@ -1,111 +1,111 @@
 const questions = [
   {
-    "question": "Qual foi o resultado da eleição presidencial dos Estados Unidos em 2020?",
+    "question": "Qual é a capital da França?",
     "options": [
-      "A) Joe Biden foi reeleito",
-      "B) Donald Trump foi reeleito",
-      "C) Joe Biden foi eleito"
+      "A) Berlim",
+      "B) Paris",
+      "C) Londres"
     ],
-    "correctAnswer": "C) Joe Biden foi eleito",
+    "correctAnswer": "B) Paris",
     "questionAudio": "/public/question/01.mp3",
     "correctAudio": "/public/answer/01.mp3"
   },
   {
-    "question": "Em que país ocorreu o boom do Bitcoin em 2021?",
+    "question": "Quem pintou a Mona Lisa?",
     "options": [
-      "A) China",
-      "B) Estados Unidos",
-      "C) El Salvador"
+      "A) Van Gogh",
+      "B) Leonardo da Vinci",
+      "C) Pablo Picasso"
     ],
-    "correctAnswer": "C) El Salvador",
+    "correctAnswer": "B) Leonardo da Vinci",
     "questionAudio": "/public/question/02.mp3",
     "correctAudio": "/public/answer/02.mp3"
   },
   {
-    "question": "Qual a capital da Etiópia?",
+    "question": "Qual é o maior planeta do sistema solar?",
     "options": [
-      "A) Dar es Salaam",
-      "B) Addis Abeba",
-      "C) Djibuti"
+      "A) Marte",
+      "B) Júpiter",
+      "C) Terra"
     ],
-    "correctAnswer": "B) Addis Abeba",
+    "correctAnswer": "B) Júpiter",
     "questionAudio": "/public/question/03.mp3",
     "correctAudio": "/public/answer/03.mp3"
   },
   {
-    "question": "Quem é o atual presidente da Rússia?",
+    "question": "Onde fica a Torre Eiffel?",
     "options": [
-      "A) Vladimir Putin",
-      "B) Dmitry Medvedev",
-      "C) Boris Yeltsin"
+      "A) Nova York",
+      "B) Paris",
+      "C) Londres"
     ],
-    "correctAnswer": "A) Vladimir Putin",
+    "correctAnswer": "B) Paris",
     "questionAudio": "/public/question/04.mp3",
     "correctAudio": "/public/answer/04.mp3"
   },
   {
-    "question": "Qual é a capital da Austrália?",
+    "question": "Quem escreveu a peça de teatro 'Romeu e Julieta'?",
     "options": [
-      "A) Sydney",
-      "B) Melbourne",
-      "C) Camberra"
+      "A) William Shakespeare",
+      "B) Miguel de Cervantes",
+      "C) Charles Dickens"
     ],
-    "correctAnswer": "C) Camberra",
+    "correctAnswer": "A) William Shakespeare",
     "questionAudio": "/public/question/05.mp3",
     "correctAudio": "/public/answer/05.mp3"
   },
   {
-    "question": "Qual o nome da líder de Myanmar que foi deposta em um golpe de estado em 2021?",
+    "question": "Qual é o nome do primeiro presidente dos Estados Unidos?",
     "options": [
-      "A) Aung San Suu Kyi",
-      "B) Yingluck Shinawatra",
-      "C) Sheikh Hasina"
+      "A) Abraham Lincoln",
+      "B) George Washington",
+      "C) Thomas Jefferson"
     ],
-    "correctAnswer": "A) Aung San Suu Kyi",
+    "correctAnswer": "B) George Washington",
     "questionAudio": "/public/question/06.mp3",
     "correctAudio": "/public/answer/06.mp3"
   },
   {
-    "question": "Onde ocorreu a conferência sobre mudanças climáticas COP26 em 2021?",
+    "question": "Qual é o nome da obra mais famosa de William Shakespeare?",
     "options": [
-      "A) Nova York",
-      "B) Glasgow",
-      "C) Paris"
+      "A) Hamlet",
+      "B) Romeu e Julieta",
+      "C) Macbeth"
     ],
-    "correctAnswer": "B) Glasgow",
+    "correctAnswer": "A) Hamlet",
     "questionAudio": "/public/question/07.mp3",
     "correctAudio": "/public/answer/07.mp3"
   },
   {
-    "question": "Quem é o atual primeiro-ministro do Reino Unido?",
+    "question": "Quem foi o primeiro homem a pisar na Lua?",
     "options": [
-      "A) Boris Johnson",
-      "B) David Cameron",
-      "C) Theresa May"
+      "A) Neil Armstrong",
+      "B) Buzz Aldrin",
+      "C) Yuri Gagarin"
     ],
-    "correctAnswer": "A) Boris Johnson",
+    "correctAnswer": "A) Neil Armstrong",
     "questionAudio": "/public/question/08.mp3",
     "correctAudio": "/public/answer/08.mp3"
   },
   {
-    "question": "Qual país inaugurou a Ponte Hong Kong-Zhuhai-Macau, a maior ponte marítima do mundo?",
+    "question": "Quem pintou a obra 'Noite Estrelada'?",
     "options": [
-      "A) China",
-      "B) Japão",
-      "C) Coreia do Sul"
+      "A) Leonardo da Vinci",
+      "B) Vincent van Gogh",
+      "C) Salvador Dalí"
     ],
-    "correctAnswer": "A) China",
+    "correctAnswer": "B) Vincent van Gogh",
     "questionAudio": "/public/question/09.mp3",
     "correctAudio": "/public/answer/09.mp3"
   },
   {
-    "question": "Qual a principal causa dos protestos que ocorreram em Cuba em 2021?",
+    "question": "Qual é o maior oceano do mundo?",
     "options": [
-      "A) Crise econômica",
-      "B) Epidemia de zika",
-      "C) Corrupção policial"
+      "A) Oceano Atlântico",
+      "B) Oceano Pacífico",
+      "C) Oceano Índico"
     ],
-    "correctAnswer": "A) Crise econômica",
+    "correctAnswer": "B) Oceano Pacífico",
     "questionAudio": "/public/question/10.mp3",
     "correctAudio": "/public/answer/10.mp3"
   }

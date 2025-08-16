@@ -1,5 +1,5 @@
-export const legenda = `🧠 Você manda bem em Atualidades?
-Desafie seu cérebro com esse quiz de nível difícil!
+export const legenda = `🧠 Você manda bem em Cultura Geral?
+Desafie seu cérebro com esse quiz de nível fácil!
 Comente quantas você acertou 👇
 
-#quiz #conhecimentosgerais #quiztime #curiosidades #atualidades #quizatualidades`;
+#quiz #conhecimentosgerais #quiztime #curiosidades #culturageral #quizculturageral`;

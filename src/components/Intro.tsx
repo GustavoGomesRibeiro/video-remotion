@@ -42,7 +42,15 @@ export const Intro: React.FC<IntroProps> = ({
       ) : (
         <Img
           src={staticFile(background)}
-          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            transform: `scale(${interpolate(frame, [0, 150], [1, 1.2], {
+              extrapolateRight: "clamp",
+            })})`,
+            transition: "transform 0.3s ease-out",
+          }}
         />
       )}
 

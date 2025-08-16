@@ -1,5 +1,6 @@
 import React from "react";
 import "./fonts/fonts.css";
+
 import {
   Composition,
   Audio,
@@ -12,6 +13,7 @@ import { AnswerFrame } from "./components/AnswerFrame";
 import { settings } from "./assets/config/setting";
 import questions from "./assets/config/json";
 import { Intro } from "./components/Intro";
+import { QuizLayout01 } from "./compositions/quiz-layout-01/quiz-layout-01";
 
 const QuizVideo: React.FC<{ startIndex: number; endIndex: number }> = ({
   startIndex,
@@ -91,7 +93,9 @@ const QuizVideo: React.FC<{ startIndex: number; endIndex: number }> = ({
 };
 
 export const Root = () => {
+  const introDurationInFrames = 220;
   const totalDuration = (startIndex: number, endIndex: number) =>
+    introDurationInFrames +
     questions.slice(startIndex, endIndex).reduce((acc, q) => {
       const questionFrames =
         Math.max(5, Math.ceil(q.question.length / 15)) * 30;
@@ -119,6 +123,22 @@ export const Root = () => {
         width={1080}
         height={1920}
         defaultProps={{ startIndex: 5, endIndex: 10 }}
+      />
+
+      <Composition
+        id="QuizLayout01"
+        component={QuizLayout01}
+        durationInFrames={300}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{
+          backgroundImages: [
+            staticFile("images/earth.jpeg"),
+            staticFile("images/globe.jpeg"),
+            staticFile("images/hurricane.jpeg"),
+          ],
+        }}
       />
     </>
   );

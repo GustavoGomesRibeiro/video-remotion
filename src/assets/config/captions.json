@@ -1,0 +1,9 @@
+[
+  { "text": "Quiz de cultura geral,", "startMs": 0, "endMs": 1200 },
+  {
+    "text": "consegue acertar 5 de 5 na dificuldade fácil?",
+    "startMs": 1200,
+    "endMs": 3800
+  },
+  { "text": "Vamos lá.", "startMs": 3800, "endMs": 4600 }
+]
