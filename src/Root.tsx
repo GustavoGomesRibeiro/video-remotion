@@ -128,7 +128,7 @@ export const Root = () => {
       <Composition
         id="QuizLayout01"
         component={QuizLayout01}
-        durationInFrames={300}
+        durationInFrames={totalDuration(0, 10)}
         fps={30}
         width={1080}
         height={1920}

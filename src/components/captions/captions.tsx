@@ -16,10 +16,7 @@ export const Captions: React.FC<{ items: Caption[] }> = ({ items }) => {
   if (active.length === 0) return null;
 
   return (
-    <div
-      className="w-full flex items-center justify-center px-6"
-      style={{ position: "absolute", bottom: 40, left: 0 }}
-    >
+    <div className="w-full flex items-center justify-center px-6">
       <div
         style={{
           background: "rgba(0,0,0,0.45)",
