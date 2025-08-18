@@ -1,56 +1,3 @@
-// import React from "react";
-// import { useCurrentFrame, interpolate } from "remotion";
-
-// export const NumberedList: React.FC = () => {
-//   const frame = useCurrentFrame();
-
-//   return (
-//     <div className="flex flex-col gap-3">
-//       {[...Array(10)].map((_, index) => {
-//         const delay = index * 5;
-//         const opacity = interpolate(frame, [30 + delay, 50 + delay], [0, 1], {
-//           extrapolateLeft: "clamp",
-//           extrapolateRight: "clamp",
-//         });
-
-//         const translateX = interpolate(
-//           frame,
-//           [30 + delay, 50 + delay],
-//           [-20, 0],
-//           {
-//             extrapolateLeft: "clamp",
-//             extrapolateRight: "clamp",
-//           },
-//         );
-
-//         return (
-//           <div
-//             key={index}
-//             className="flex items-center"
-//             style={{
-//               opacity,
-//               transform: `translateX(${translateX}px)`,
-//             }}
-//           >
-//             <div className="w-24 h-24 bg-black bg-opacity-60 rounded-lg flex items-center justify-center border-2 border-white border-opacity-30">
-//               <span
-//                 className="text-white text-2xl font-bold"
-//                 style={{
-//                   fontFamily: "Lilita One",
-//                   fontSize: 65,
-//                 }}
-//               >
-//                 {index + 1}
-//                 {index === 9 && "."}
-//               </span>
-//             </div>
-//           </div>
-//         );
-//       })}
-//     </div>
-//   );
-// };
-
 import React from "react";
 import { useCurrentFrame, interpolate } from "remotion";
 
@@ -116,8 +63,7 @@ export const NumberedList: React.FC<Props> = ({
               transform: `translateX(${boxTranslateX}px)`,
             }}
           >
-            {/* Caixa com o número */}
-            <div className="w-24 h-24 bg-black bg-opacity-60 rounded-lg flex items-center justify-center border-2 border-white/30">
+            <div className="w-24 h-24 bg-black/60 rounded-lg flex items-center justify-center border-2 border-white/30">
               <span
                 className="text-white font-bold"
                 style={{
@@ -131,19 +77,19 @@ export const NumberedList: React.FC<Props> = ({
               </span>
             </div>
 
-            {/* Texto da resposta (aparece quando chegar o frame) */}
             <div
-              className="min-h-[2.5rem] text-white text-2xl font-bold"
+              className="text-white text-2xl font-bold leading-snug"
               style={{
+                fontFamily: "Lilita One",
+                fontSize: 60,
                 opacity: showAnswer ? answerOpacity : 0,
                 transform: showAnswer
                   ? `translateY(${answerTranslateY}px)`
-                  : "translateY(8px)",
+                  : "translateY(6px)",
                 whiteSpace: "nowrap",
               }}
             >
-              {/* Exibe “1. Paris”, “2. ...” etc */}
-              {showAnswer ? `${i + 1}. ${e.answerText}` : ""}
+              {showAnswer ? `${e.answerText}` : ""}
             </div>
           </div>
         );

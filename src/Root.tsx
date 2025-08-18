@@ -42,7 +42,7 @@ const QuizVideo: React.FC<{ startIndex: number; endIndex: number }> = ({
 
   return (
     <>
-      <Audio src={staticFile("song-steven.mp3")} volume={0.05} />
+      <Audio src={staticFile("audio-intro/song-steven.mp3")} volume={0.05} />
 
       <Sequence from={0} durationInFrames={introDurationInFrames}>
         <Intro
@@ -134,9 +134,10 @@ export const Root = () => {
         height={1920}
         defaultProps={{
           backgroundImages: [
-            staticFile("images/earth.jpeg"),
-            staticFile("images/globe.jpeg"),
-            staticFile("images/hurricane.jpeg"),
+            // staticFile("images/earth.jpeg"),
+            // staticFile("images/globe.jpeg"),
+            // staticFile("images/hurricane.jpeg"),
+            staticFile("images/music.jpg"),
           ],
         }}
       />

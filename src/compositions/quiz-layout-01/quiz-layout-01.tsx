@@ -252,7 +252,7 @@ export const QuizLayout01: React.FC<{ backgroundImages: string[] }> = ({
           {/* rodapé persistente com lista numerada + respostas acumulando */}
           <Sequence from={0} durationInFrames={durationInFrames}>
             <AbsoluteFill className="pointer-events-none flex flex-col justify-end">
-              <div className="px-12 pb-10">
+              <div className="px-12 pb-4">
                 <NumberedList
                   entries={schedule.map((s) => ({
                     index: s.index,

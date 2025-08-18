@@ -328,9 +328,6 @@ export const MainTitle: React.FC<MainTitleProps> = ({
           </div>
         </div>
       </AbsoluteFill>
-      {/* <div className="flex justify-between items-start mt-150">
-        <NumberedList />
-      </div> */}
     </Sequence>
   );
 };

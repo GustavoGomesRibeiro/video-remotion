@@ -40,6 +40,8 @@ export const QuestionSequence: React.FC<QuestionSequenceProps> = ({
 
   return (
     <>
+      <Audio src={staticFile("audio-intro/song-steven.mp3")} volume={0.05} />
+
       {/* Pergunta */}
       <Sequence from={questionFrom} durationInFrames={questionDuration}>
         <Audio src={questionAudio} />

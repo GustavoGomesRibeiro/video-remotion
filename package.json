@@ -41,7 +41,9 @@
     "gerarVideoFinalLayout01": "npx remotion render QuizLayout01 out/quiz_layout_01_final.mp4",
     "gerarVideoFinal": "npx remotion render QuizVideo out/quiz_final.mp4",
     "gerarArquivos": "npx ts-node scripts/generate-quiz.ts",
+    "scriptArquivosLayout01": "npx ts-node scripts/generate-quiz-layout-01.ts",
     "gerarVideosSeparados": "npx remotion render QuizParte1 out/quiz_parte1.mp4 && npx remotion render QuizParte2 out/quiz_parte2.mp4",
-    "gerarVideo": "npm run gerarArquivos && npm run gerarVideosSeparados"
+    "gerarVideo": "npm run gerarArquivos && npm run gerarVideosSeparados",
+    "gerarVideoLayout01": "npm run scriptArquivosLayout01 && npm run gerarVideoFinalLayout01"
   }
 }

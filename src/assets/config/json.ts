@@ -1,146 +1,254 @@
 const questions = [
   {
-    question: "Qual é a capital da França?",
-    options: ["A) Berlim", "B) Paris", "C) Londres"],
-    correctAnswer: "Paris",
-    questionAudio: "/public/question/01.mp3",
-    correctAudio: "/public/answer/01.mp3",
-    captions: [
-      { text: "Qual é a capital da França?", startMs: 0, endMs: 2500 },
+    "question": "Qual é o verdadeiro nome da cantora Beyoncé?",
+    "options": [
+      "A) Beyoncé Knowles-Carter",
+      "B) Beyoncé Giselle Knowles",
+      "C) Beyoncé Gabriella Knowles"
     ],
-    answerCaptions: [{ text: "Paris", startMs: 0, endMs: 2000 }],
-  },
-  {
-    question: "Quem pintou a Mona Lisa?",
-    options: ["A) Van Gogh", "B) Leonardo da Vinci", "C) Pablo Picasso"],
-    correctAnswer: "Leonardo da Vinci",
-    questionAudio: "/public/question/02.mp3",
-    correctAudio: "/public/answer/02.mp3",
-    captions: [{ text: "Quem pintou a Mona Lisa?", startMs: 0, endMs: 2500 }],
-    answerCaptions: [{ text: "Leonardo da Vinci", startMs: 0, endMs: 2000 }],
-  },
-  {
-    question: "Qual é o maior planeta do sistema solar?",
-    options: ["A) Marte", "B) Júpiter", "C) Terra"],
-    correctAnswer: "Júpiter",
-    questionAudio: "/public/question/03.mp3",
-    correctAudio: "/public/answer/03.mp3",
-    captions: [
+    "correctAnswer": "Beyoncé Knowles-Carter",
+    "questionAudio": "/public/question/01.mp3",
+    "correctAudio": "/public/answer/01.mp3",
+    "captions": [
       {
-        text: "Qual é o maior planeta do sistema solar?",
-        startMs: 0,
-        endMs: 2500,
-      },
+        "text": "Qual é o verdadeiro nome da cantora Beyoncé?",
+        "startMs": 0,
+        "endMs": 3000
+      }
     ],
-    answerCaptions: [{ text: "Júpiter", startMs: 0, endMs: 2000 }],
-  },
-  {
-    question: "Onde fica a Torre Eiffel?",
-    options: ["A) Nova York", "B) Paris", "C) Londres"],
-    correctAnswer: "Paris",
-    questionAudio: "/public/question/04.mp3",
-    correctAudio: "/public/answer/04.mp3",
-    captions: [{ text: "Onde fica a Torre Eiffel?", startMs: 0, endMs: 2500 }],
-    answerCaptions: [{ text: "Paris", startMs: 0, endMs: 2000 }],
-  },
-  {
-    question: "Quem escreveu a peça de teatro 'Romeu e Julieta'?",
-    options: [
-      "A) William Shakespeare",
-      "B) Miguel de Cervantes",
-      "C) Charles Dickens",
-    ],
-    correctAnswer: "William Shakespeare",
-    questionAudio: "/public/question/05.mp3",
-    correctAudio: "/public/answer/05.mp3",
-    captions: [
+    "answerCaptions": [
       {
-        text: "Quem escreveu a peça de teatro 'Romeu e Julieta'?",
-        startMs: 0,
-        endMs: 2500,
-      },
-    ],
-    answerCaptions: [{ text: "William Shakespeare", startMs: 0, endMs: 2000 }],
+        "text": "Beyoncé Knowles-Carter",
+        "startMs": 0,
+        "endMs": 2000
+      }
+    ]
   },
   {
-    question: "Qual é o nome do primeiro presidente dos Estados Unidos?",
-    options: [
-      "A) Abraham Lincoln",
-      "B) George Washington",
-      "C) Thomas Jefferson",
+    "question": "Qual desses artistas não faz parte da banda Black Eyed Peas?",
+    "options": [
+      "A) will.i.am",
+      "B) Fergie",
+      "C) Bruno Mars"
     ],
-    correctAnswer: "George Washington",
-    questionAudio: "/public/question/06.mp3",
-    correctAudio: "/public/answer/06.mp3",
-    captions: [
+    "correctAnswer": "Bruno Mars",
+    "questionAudio": "/public/question/02.mp3",
+    "correctAudio": "/public/answer/02.mp3",
+    "captions": [
       {
-        text: "Qual é o nome do primeiro presidente dos Estados Unidos?",
-        startMs: 0,
-        endMs: 2500,
-      },
+        "text": "Qual desses artistas não faz parte da banda Black Eyed Peas?",
+        "startMs": 0,
+        "endMs": 4000
+      }
     ],
-    answerCaptions: [{ text: "George Washington", startMs: 0, endMs: 2000 }],
-  },
-  {
-    question: "Qual é o nome da obra mais famosa de William Shakespeare?",
-    options: ["A) Hamlet", "B) Romeu e Julieta", "C) Macbeth"],
-    correctAnswer: "Hamlet",
-    questionAudio: "/public/question/07.mp3",
-    correctAudio: "/public/answer/07.mp3",
-    captions: [
+    "answerCaptions": [
       {
-        text: "Qual é o nome da obra mais famosa de William Shakespeare?",
-        startMs: 0,
-        endMs: 2500,
-      },
-    ],
-    answerCaptions: [{ text: "Hamlet", startMs: 0, endMs: 2000 }],
+        "text": "Bruno Mars",
+        "startMs": 0,
+        "endMs": 2000
+      }
+    ]
   },
   {
-    question: "Quem foi o primeiro homem a pisar na Lua?",
-    options: ["A) Neil Armstrong", "B) Buzz Aldrin", "C) Yuri Gagarin"],
-    correctAnswer: "Neil Armstrong",
-    questionAudio: "/public/question/08.mp3",
-    correctAudio: "/public/answer/08.mp3",
-    captions: [
+    "question": "Em que ano foi lançada a música 'Gangnam Style' do cantor sul-coreano Psy?",
+    "options": [
+      "A) 2010",
+      "B) 2012",
+      "C) 2014"
+    ],
+    "correctAnswer": "2012",
+    "questionAudio": "/public/question/03.mp3",
+    "correctAudio": "/public/answer/03.mp3",
+    "captions": [
       {
-        text: "Quem foi o primeiro homem a pisar na Lua?",
-        startMs: 0,
-        endMs: 2500,
-      },
+        "text": "Em que ano foi lançada a música 'Gangnam Style' do cantor sul-coreano Psy?",
+        "startMs": 0,
+        "endMs": 5000
+      }
     ],
-    answerCaptions: [{ text: "Neil Armstrong", startMs: 0, endMs: 2000 }],
-  },
-  {
-    question: "Quem pintou a obra 'Noite Estrelada'?",
-    options: [
-      "A) Leonardo da Vinci",
-      "B) Vincent van Gogh",
-      "C) Salvador Dalí",
-    ],
-    correctAnswer: "Vincent van Gogh",
-    questionAudio: "/public/question/09.mp3",
-    correctAudio: "/public/answer/09.mp3",
-    captions: [
+    "answerCaptions": [
       {
-        text: "Quem pintou a obra 'Noite Estrelada'?",
-        startMs: 0,
-        endMs: 2500,
-      },
-    ],
-    answerCaptions: [{ text: "Vincent van Gogh", startMs: 0, endMs: 2000 }],
+        "text": "2012",
+        "startMs": 0,
+        "endMs": 2000
+      }
+    ]
   },
   {
-    question: "Qual é o maior oceano do mundo?",
-    options: ["A) Oceano Atlântico", "B) Oceano Pacífico", "C) Oceano Índico"],
-    correctAnswer: "Oceano Pacífico",
-    questionAudio: "/public/question/10.mp3",
-    correctAudio: "/public/answer/10.mp3",
-    captions: [
-      { text: "Qual é o maior oceano do mundo?", startMs: 0, endMs: 2500 },
+    "question": "De quem é a música 'Shape of You'?",
+    "options": [
+      "A) Ed Sheeran",
+      "B) Sam Smith",
+      "C) Justin Bieber"
     ],
-    answerCaptions: [{ text: "Oceano Pacífico", startMs: 0, endMs: 2000 }],
+    "correctAnswer": "Ed Sheeran",
+    "questionAudio": "/public/question/04.mp3",
+    "correctAudio": "/public/answer/04.mp3",
+    "captions": [
+      {
+        "text": "De quem é a música 'Shape of You'?",
+        "startMs": 0,
+        "endMs": 3000
+      }
+    ],
+    "answerCaptions": [
+      {
+        "text": "Ed Sheeran",
+        "startMs": 0,
+        "endMs": 2000
+      }
+    ]
   },
+  {
+    "question": "Qual destes artistas ganhou um Grammy de 'Álbum do Ano'?",
+    "options": [
+      "A) Drake",
+      "B) Adele",
+      "C) Taylor Swift"
+    ],
+    "correctAnswer": "Adele",
+    "questionAudio": "/public/question/05.mp3",
+    "correctAudio": "/public/answer/05.mp3",
+    "captions": [
+      {
+        "text": "Qual destes artistas ganhou um Grammy de 'Álbum do Ano'?",
+        "startMs": 0,
+        "endMs": 4000
+      }
+    ],
+    "answerCaptions": [
+      {
+        "text": "Adele",
+        "startMs": 0,
+        "endMs": 2000
+      }
+    ]
+  },
+  {
+    "question": "Qual é o nome da primeira música de sucesso do cantor Post Malone?",
+    "options": [
+      "A) 'Rockstar'",
+      "B) 'White Iverson'",
+      "C) 'Congratulations'"
+    ],
+    "correctAnswer": "'White Iverson'",
+    "questionAudio": "/public/question/06.mp3",
+    "correctAudio": "/public/answer/06.mp3",
+    "captions": [
+      {
+        "text": "Qual é o nome da primeira música de sucesso do cantor Post Malone?",
+        "startMs": 0,
+        "endMs": 5000
+      }
+    ],
+    "answerCaptions": [
+      {
+        "text": "'White Iverson'",
+        "startMs": 0,
+        "endMs": 2000
+      }
+    ]
+  },
+  {
+    "question": "Quem lançou a música 'Bad Romance'?",
+    "options": [
+      "A) Lady Gaga",
+      "B) Katy Perry",
+      "C) Rihanna"
+    ],
+    "correctAnswer": "Lady Gaga",
+    "questionAudio": "/public/question/07.mp3",
+    "correctAudio": "/public/answer/07.mp3",
+    "captions": [
+      {
+        "text": "Quem lançou a música 'Bad Romance'?",
+        "startMs": 0,
+        "endMs": 3000
+      }
+    ],
+    "answerCaptions": [
+      {
+        "text": "Lady Gaga",
+        "startMs": 0,
+        "endMs": 2000
+      }
+    ]
+  },
+  {
+    "question": "Qual desses artistas não participou do projeto 'USA for Africa', que gravou a música 'We Are the World'?",
+    "options": [
+      "A) Michael Jackson",
+      "B) Prince",
+      "C) David Bowie"
+    ],
+    "correctAnswer": "David Bowie",
+    "questionAudio": "/public/question/08.mp3",
+    "correctAudio": "/public/answer/08.mp3",
+    "captions": [
+      {
+        "text": "Qual desses artistas não participou do projeto 'USA for Africa', que gravou a música 'We Are the World'?",
+        "startMs": 0,
+        "endMs": 7000
+      }
+    ],
+    "answerCaptions": [
+      {
+        "text": "David Bowie",
+        "startMs": 0,
+        "endMs": 2000
+      }
+    ]
+  },
+  {
+    "question": "Qual é o verdadeiro nome do cantor The Weeknd?",
+    "options": [
+      "A) Abel Makkonen Tesfaye",
+      "B) Sean John Combs",
+      "C) Richard Colson Baker"
+    ],
+    "correctAnswer": "Abel Makkonen Tesfaye",
+    "questionAudio": "/public/question/09.mp3",
+    "correctAudio": "/public/answer/09.mp3",
+    "captions": [
+      {
+        "text": "Qual é o verdadeiro nome do cantor The Weeknd?",
+        "startMs": 0,
+        "endMs": 4000
+      }
+    ],
+    "answerCaptions": [
+      {
+        "text": "Abel Makkonen Tesfaye",
+        "startMs": 0,
+        "endMs": 2000
+      }
+    ]
+  },
+  {
+    "question": "Qual destas cantoras está no topo da lista de artistas femininas com mais prêmios Grammy?",
+    "options": [
+      "A) Beyoncé",
+      "B) Taylor Swift",
+      "C) Adele"
+    ],
+    "correctAnswer": "Beyoncé",
+    "questionAudio": "/public/question/10.mp3",
+    "correctAudio": "/public/answer/10.mp3",
+    "captions": [
+      {
+        "text": "Qual destas cantoras está no topo da lista de artistas femininas com mais prêmios Grammy?",
+        "startMs": 0,
+        "endMs": 6000
+      }
+    ],
+    "answerCaptions": [
+      {
+        "text": "Beyoncé",
+        "startMs": 0,
+        "endMs": 2000
+      }
+    ]
+  }
 ];
 
 export default questions;
